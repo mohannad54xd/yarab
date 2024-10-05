@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 10px;
+    height: 35px;
+    text-align: left;
+  }
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    color: black;
+    font-size: 20px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+  #neo-gallery {
+  margin: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+#neo-gallery h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for NEO cards */
+.neo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Each NEO card */
+.neo-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.neo-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+/* NEO image styling */
+.neo-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Keep aspect ratio and fill the card */
+}
+
+/* Styling the NEO headings and text */
+.neo-card h3 {
+  margin-top: 0;
+  color: #2980b9;
+}
+
+.neo-card p {
+  margin: 5px 0;
+}
+
+.neo-card p strong {
+  color: #2c3e50;
+}
+.toggle-btn {
+  left: 37%;
+    position: relative;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .toggle-btn:hover {
+    background-color: #1f6391;
+  }
+
+  /* Toggleable content initially hidden */
+  .toggle-content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
