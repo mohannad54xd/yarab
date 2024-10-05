@@ -1,7 +1,7 @@
   import * as THREE from "three";
   import { OrbitControls } from 'jsm/controls/OrbitControls.js';
 
-  import getStarfield from "/src/getStarfield.js";
+  import getStarfield from "./src/getStarfield.js";
 
 
   const w = window.innerWidth;
